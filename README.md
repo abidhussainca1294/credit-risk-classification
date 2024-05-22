@@ -16,7 +16,7 @@ The machine learning model Logistic Regression is used to predict the loan statu
    * Train : A large subset of the labeled data is used to teach the model to recognize classification patterns.
    * Predict: Finally, the model is used to predict labels for unclassified data(test data).
 
- #Deliverables 
+ # Deliverables 
     * Jupyter notebook code - credit_risk_classification.ipynb
     * Credit risk analysis report : report-template.md
     
