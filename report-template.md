@@ -25,13 +25,16 @@ X variable: These are the features. It is a dataframe consisting of everything e
 ## Results
 
 * Logistic regression model:
-    * Accuracy: 
+    * Precision: Out of all the loans the model predicted "High risk" (1) , only 85% were high risk. 
+    * Recall: Out of all the actual High risk , the model predicted this outcome correctly for 91% of those high risk loans.
+    * Accuracy: the model has 99% acuraccy based on the TP(true positives) and TN (true negatives)out of all the total outcomes.
+    * F1-score : The model has 0.88 score which is near 1.
 
 ## Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
+The logistic Regression model performs well in predicting the loan outcomes. 
+* For healthy loans the prediction from the model are 100% correct with the test data. It only classifies 1% of healthy loans into high risk.
+* For high risk loans (1) the 85% of model prediction matches with test data. This is happening because the dataset has very low of support for high risk loans (619) compared to the very high number of helathy loans(18765)
 
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
+Keeping in mind that high risk loans are more harmful, the model needs to be better trained with more high risk loans to predict better.
 
-If you do not recommend any of the models, please justify your reasoning.
